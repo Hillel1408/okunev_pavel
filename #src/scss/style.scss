@@ -1,0 +1,35 @@
+@import 'fonts';
+@import 'icons';
+
+$minWidth: 360;
+$maxWidth: 1512;
+$maxWidthContainer: 1142;
+$md1: $maxWidthContainer + 30;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 575.98;
+$md5: 419.98;
+
+$fontFamily: 'Open Sans', sans-serif;
+
+@import 'null';
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: ($md1 + px)) {
+        max-width: none;
+        padding: 0 15px;
+    }
+}
+
+@import './sections/header';
+@import './sections/main';
+@import './sections/footer';
