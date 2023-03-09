@@ -1,2 +1,73 @@
 .footer {
+    display: flex;
+    background-color: #151e36;
+    &__img {
+        width: 848 / 1920 * 100%;
+        min-height: 514px;
+        background-image: url('../../img/img-1.jpg');
+        background-size: cover;
+        background-position: right top;
+        @media (max-width: ($md3 + px)) {
+            display: none;
+        }
+    }
+    &__content {
+        transform: skewX(-17deg) translateX(-82px);
+        width: (1920 - 848) / 1920 * 100%;
+        background-color: #151e36;
+        &-block {
+            transform: skewX(15deg);
+            padding: 56px 0 56px 75px;
+            @media (max-width: ($md3 + px)) {
+                transform: none;
+                padding: 56px 15px 56px 15px;
+            }
+        }
+        @media (max-width: ($md3 + px)) {
+            width: 100%;
+            transform: none;
+        }
+    }
+    &__logo {
+        color: white;
+        margin-bottom: 66px;
+        span {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 36px;
+            font-family: 'Gilroy', sans-serif;
+            margin-left: 9px;
+        }
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-link {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 30px;
+            color: white;
+            font-family: 'Gilroy', sans-serif;
+        }
+    }
+    &__flex {
+        display: flex;
+        gap: 64px;
+        @media (max-width: ($md4 + px)) {
+            gap: 30px;
+            flex-direction: column;
+        }
+    }
+    &__consultation {
+        font-size: 18px;
+        line-height: 30px;
+        color: #ffffff;
+    }
+    &__tel {
+        color: #ffffff;
+        margin-top: 6px;
+    }
 }

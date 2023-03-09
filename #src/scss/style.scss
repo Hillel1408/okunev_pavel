@@ -41,7 +41,39 @@ $fontFamily: 'Noto Sans', sans-serif;
         margin-right: 8px;
     }
 }
+.subtitle {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #151e36;
+}
+.input {
+    border: 1px solid rgba(0, 202, 224, 0.64);
+    border-radius: 9px;
+    width: 100%;
+    max-width: 341px;
+    height: 52px;
+    padding: 0 14px;
+    &::placeholder {
+        color: #9f9b9d;
+        font-size: 14px;
+        line-height: 36px;
+    }
+}
+.btn {
+    background: #151e36;
+    border: 1px solid rgba(0, 202, 224, 0.64);
+    padding: 18px 30px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+    max-width: 265px;
+}
 
 @import './sections/header';
-@import './sections/main';
+@import './sections/reviews';
+@import './sections/contacts';
 @import './sections/footer';
