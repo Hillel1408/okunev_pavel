@@ -1,16 +1,16 @@
 @import 'fonts';
 @import 'icons';
 
-$minWidth: 360;
-$maxWidth: 1512;
-$maxWidthContainer: 1142;
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1198;
 $md1: $maxWidthContainer + 30;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 575.98;
-$md5: 419.98;
+$md5: 319.98;
 
-$fontFamily: 'Open Sans', sans-serif;
+$fontFamily: 'Noto Sans', sans-serif;
 
 @import 'null';
 
@@ -27,6 +27,18 @@ $fontFamily: 'Open Sans', sans-serif;
     @media (max-width: ($md1 + px)) {
         max-width: none;
         padding: 0 15px;
+    }
+}
+.logo {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #151e36;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 8px;
     }
 }
 
