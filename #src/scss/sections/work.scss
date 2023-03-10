@@ -1,0 +1,95 @@
+.work {
+    &__container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    &__swiper {
+        overflow: hidden;
+        position: relative;
+        padding-top: 85px;
+        &-slide {
+            display: grid !important;
+            grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
+            gap: 122 / (483 * 2 + 122) * 100%;
+            padding-right: 110px;
+            row-gap: 100px;
+        }
+        &-button-prev,
+        &-button-next {
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+            width: 45px;
+            height: 45px;
+            border: 0.9px solid #151e36;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-button-next {
+            margin-left: 65px;
+            right: 0;
+        }
+        &-button-prev {
+            transform: rotate(180deg);
+            right: 65px;
+        }
+    }
+}
+.img-comparison-slider {
+    width: 483px;
+    border: 5px solid #c5bcb6;
+    border-radius: 10px;
+    position: relative;
+    --divider-width: 4px;
+    --divider-color: white;
+    img {
+        width: 100%;
+        height: 324px;
+        object-fit: cover;
+    }
+    &:before,
+    &:after {
+        position: absolute;
+        display: block;
+        width: 67px;
+        height: 56px;
+        background: #ffffff;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 36px;
+        color: #151e36;
+        font-family: 'Gilroy', sans-serif;
+    }
+    &:after {
+        content: 'После';
+        top: 0;
+        right: 0;
+        width: 100px;
+    }
+    &:before {
+        content: 'До';
+    }
+}
+.swiper-scrollbar {
+    position: static !important;
+    margin-top: 76px;
+    background: #f2f3f9 !important;
+    border-radius: 9px !important;
+    height: 7px !important;
+    width: 100% !important;
+    bottom: 0 !important;
+}
+.swiper-scrollbar-drag {
+    background: linear-gradient(
+        269.97deg,
+        #c9efff 30.99%,
+        #64ccff 97.87%
+    ) !important;
+    border-radius: 9px !important;
+}
