@@ -3,6 +3,11 @@
         padding-top: 94px;
         padding-bottom: 94px;
     }
+    &__subtitle {
+        @media (max-width: ($md3 + px)) {
+            margin-bottom: 30px;
+        }
+    }
     &__swiper {
         overflow: hidden;
         position: relative;
@@ -13,6 +18,9 @@
             gap: 122 / (483 * 2 + 122) * 100%;
             padding-right: 110px;
             row-gap: 100px;
+            @media (max-width: ($md2 + px)) {
+                padding-right: 0;
+            }
         }
         &-button-prev,
         &-button-next {
@@ -35,10 +43,26 @@
             transform: rotate(180deg);
             right: 65px;
         }
+        &-scrollbar {
+            position: static !important;
+            margin-top: 76px;
+            background: #f2f3f9 !important;
+            border-radius: 9px !important;
+            height: 7px !important;
+            width: 100% !important;
+            bottom: 0 !important;
+            .swiper-scrollbar-drag {
+                background: linear-gradient(
+                    269.97deg,
+                    #c9efff 30.99%,
+                    #64ccff 97.87%
+                ) !important;
+                border-radius: 9px !important;
+            }
+        }
     }
 }
 .img-comparison-slider {
-    width: 483px;
     border: 5px solid #c5bcb6;
     border-radius: 10px;
     position: relative;
@@ -75,21 +99,4 @@
     &:before {
         content: 'До';
     }
-}
-.swiper-scrollbar {
-    position: static !important;
-    margin-top: 76px;
-    background: #f2f3f9 !important;
-    border-radius: 9px !important;
-    height: 7px !important;
-    width: 100% !important;
-    bottom: 0 !important;
-}
-.swiper-scrollbar-drag {
-    background: linear-gradient(
-        269.97deg,
-        #c9efff 30.99%,
-        #64ccff 97.87%
-    ) !important;
-    border-radius: 9px !important;
 }

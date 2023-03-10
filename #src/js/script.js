@@ -20,12 +20,23 @@ const workSwiper = new Swiper('.work__swiper', {
         prevEl: '.work__swiper-button-prev',
     },
     scrollbar: {
-        el: '.swiper-scrollbar',
-        // Makes the Scrollbar Draggable
+        el: '.work__swiper-scrollbar',
         draggable: true,
-        // Snaps slider position to slides when you release Scrollbar
         snapOnRelease: true,
-        // Size (Length) of Scrollbar Draggable Element in px
         dragSize: 'auto',
+    },
+});
+const certificatesSwiper = new Swiper('.certificates__swiper', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    scrollbar: {
+        el: '.certificates__swiper-scrollbar',
+        draggable: true,
+        snapOnRelease: true,
+        dragSize: 'auto',
+    },
+    navigation: {
+        nextEl: '.certificates__swiper-button-next',
+        prevEl: '.certificates__swiper-button-prev',
     },
 });
