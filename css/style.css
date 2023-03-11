@@ -1543,7 +1543,7 @@ body.lock {
 }
 
 .contacts__content-social > div a b:before {
-  content: url("../../img/icon-1.png");
+  content: url("../img/icon-1.png");
   display: block;
   height: 36px;
 }
@@ -1599,7 +1599,7 @@ body.lock {
 .footer__img {
   width: 44.16667%;
   min-height: 514px;
-  background-image: url("../../img/img-1.jpg");
+  background-image: url("../img/img-1.jpg");
   background-size: cover;
   background-position: right top;
 }
