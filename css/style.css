@@ -603,7 +603,7 @@ body.lock {
   background-repeat: no-repeat;
   padding-left: 30px;
   padding-top: 18px;
-  background-image: url("../../img/bg-1.png");
+  background-image: url("../img/bg-1.png");
   position: relative;
 }
 
@@ -622,7 +622,7 @@ body.lock {
 }
 
 .intro__content-wrapper:last-child:before {
-  content: url("../../img/img-55.png");
+  content: url("../img/img-55.png");
   position: absolute;
   left: 0;
   bottom: 112px;
@@ -678,7 +678,7 @@ body.lock {
 }
 
 .intro__btn::after {
-  content: url("../../img/icon-3.svg");
+  content: url("../img/icon-3.svg");
   -webkit-transform: translateY(5px);
       -ms-transform: translateY(5px);
           transform: translateY(5px);
