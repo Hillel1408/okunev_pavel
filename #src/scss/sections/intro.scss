@@ -11,17 +11,26 @@
     &__title {
         font-weight: 700;
         font-size: 60px;
-        line-height: 60px;
+        line-height: 100%;
         color: #151e36;
         font-family: 'Gilroy', sans-serif;
         margin-top: 30px;
+        @media (max-width: ($md2 + px)) {
+            font-size: 50px;
+        }
+        @media (max-width: ($md4 + px)) {
+            font-size: 40px;
+        }
     }
     &__text {
         font-weight: 300;
         font-size: 30px;
-        line-height: 36px;
+        line-height: 36 / 30 * 100%;
         color: #151e36;
         font-family: 'Gilroy', sans-serif;
+        @media (max-width: ($md4 + px)) {
+            font-size: 24px;
+        }
         &:after {
             content: '';
             display: block;
@@ -61,8 +70,11 @@
                 position: relative;
                 @media (max-width: (1650px)) {
                     background-color: #c5ccd0;
-                    border-radius: 30px 0 0 30px;
+                    border-radius: 30px 0 0 0;
                     padding-left: 50px;
+                }
+                @media (max-width: ($md3 + px)) {
+                    border-radius: 30px 30px 0 0;
                 }
                 &:before {
                     content: url('../../img/img-55.png');
@@ -111,6 +123,9 @@
         &::after {
             content: url('../../img/icon-3.svg');
             transform: translateY(5px);
+        }
+        @media (max-width: ($md3 + px)) {
+            padding: 21px 12px;
         }
     }
     &__img {

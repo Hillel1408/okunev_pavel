@@ -1,7 +1,7 @@
 @import 'fonts';
 @import 'icons';
 
-$minWidth: 320;
+$minWidth: 360;
 $maxWidth: 1920;
 $maxWidthContainer: 1198;
 $md1: $maxWidthContainer + 30;
@@ -51,8 +51,14 @@ body.lock {
     font-family: 'Gilroy', sans-serif;
     font-weight: 700;
     font-size: 50px;
-    line-height: 60px;
+    line-height: 60 / 50 * 100%;
     color: #151e36;
+    @media (max-width: ($md2 + px)) {
+        font-size: 40px;
+    }
+    @media (max-width: ($md4 + px)) {
+        font-size: 30px;
+    }
 }
 .input {
     border: 1px solid rgba(0, 202, 224, 0.64);

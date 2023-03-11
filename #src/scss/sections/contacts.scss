@@ -58,13 +58,19 @@
         &-social {
             display: flex;
             gap: 27px;
-            flex-wrap: wrap;
+            @media (max-width: (1025px)) {
+                flex-wrap: wrap;
+            }
             & > div {
                 box-shadow: 0px 0px 19px rgba(0, 202, 224, 0.23);
                 padding: 15px 29px 22px 22px;
                 display: flex;
                 flex-direction: column;
                 gap: 18px;
+                width: 50%;
+                @media (max-width: (1025px)) {
+                    width: 100%;
+                }
                 img {
                     width: 164px;
                     margin: 0 auto;
@@ -76,6 +82,7 @@
                     display: flex;
                     align-items: center;
                     gap: 14px;
+                    flex-wrap: wrap;
                     span {
                         width: 35px;
                         height: 35px;

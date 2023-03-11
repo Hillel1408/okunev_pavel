@@ -71,6 +71,7 @@
             align-items: center;
             margin-top: 144px;
             gap: 10px;
+            padding: 5px;
         }
         &-button-prev,
         &-button-next {
@@ -127,5 +128,8 @@
         box-shadow: 0px 0px 10px rgba(100, 204, 255, 0.47) !important;
         border-radius: 10px !important;
         color: white;
+    }
+    @media (max-width: ($md3 + px)) {
+        display: none;
     }
 }
