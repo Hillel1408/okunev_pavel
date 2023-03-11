@@ -4,7 +4,7 @@
     &__img {
         width: 848 / 1920 * 100%;
         min-height: 514px;
-        background-image: url('../../img/img-1.jpg');
+        background-image: url('../img/img-1.jpg');
         background-size: cover;
         background-position: right top;
         @media (max-width: ($md3 + px)) {
@@ -16,7 +16,7 @@
         width: (1920 - 848) / 1920 * 100%;
         background-color: #151e36;
         &-block {
-            transform: skewX(15deg);
+            transform: skewX(17deg);
             padding: 56px 0 56px 75px;
             @media (max-width: ($md3 + px)) {
                 transform: none;
