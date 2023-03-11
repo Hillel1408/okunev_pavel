@@ -1508,7 +1508,7 @@ body.lock {
 }
 
 .contacts__content-social > div a {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   color: #000000;
   display: -webkit-box;
@@ -1622,7 +1622,7 @@ body.lock {
   -webkit-transform: skewX(17deg);
       -ms-transform: skewX(17deg);
           transform: skewX(17deg);
-  padding: 56px 0 56px 75px;
+  padding: 56px 0 56px 95px;
 }
 
 @media (max-width: 767.98px) {
