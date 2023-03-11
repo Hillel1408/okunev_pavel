@@ -1619,9 +1619,9 @@ body.lock {
 }
 
 .footer__content-block {
-  -webkit-transform: skewX(15deg);
-      -ms-transform: skewX(15deg);
-          transform: skewX(15deg);
+  -webkit-transform: skewX(17deg);
+      -ms-transform: skewX(17deg);
+          transform: skewX(17deg);
   padding: 56px 0 56px 75px;
 }
 
