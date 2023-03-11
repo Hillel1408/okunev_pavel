@@ -87,3 +87,21 @@ const inp3 = document.querySelector('.input3');
 const inp4 = document.querySelector('.input4');
 const btn2 = document.querySelector('.btn2');
 func(inp4, inp3, btn2);
+
+const navIcon = document.querySelector('.header__nav-icon');
+const navList = document.querySelector('.header__nav-list');
+
+navIcon.addEventListener('click', () => {
+    navIcon.classList.toggle('active');
+    navList.classList.toggle('active');
+    document.body.classList.toggle('lock');
+});
+
+const headerNavLinks = document.querySelectorAll('.header__nav-link');
+headerNavLinks.forEach((item) => {
+    item.addEventListener('click', () => {
+        navIcon.classList.toggle('active');
+        navList.classList.toggle('active');
+        document.body.classList.remove('lock');
+    });
+});

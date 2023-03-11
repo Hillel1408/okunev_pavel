@@ -14,6 +14,12 @@ $fontFamily: 'Noto Sans', sans-serif;
 
 @import 'null';
 
+html {
+    scroll-behavior: smooth;
+}
+body.lock {
+    overflow: hidden !important;
+}
 .wrapper {
     width: 100%;
     min-height: 100%;
