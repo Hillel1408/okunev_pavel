@@ -31,16 +31,25 @@
             border-radius: 10px;
             margin-left: 130px;
             margin-bottom: 29px;
+            @media (max-width: ($md3 + px)) {
+                margin-left: 0;
+            }
         }
     }
     &__content {
         width: 1000 / 1678 * 100%;
+        @media (max-width: ($md3 + px)) {
+            width: 100%;
+        }
         &-wrapper {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             &:first-child {
                 margin-right: 40px;
+                @media (max-width: ($md3 + px)) {
+                    margin-right: 0;
+                }
             }
             &:last-child {
                 background-position-x: left;
@@ -115,7 +124,7 @@
         }
         &-block {
             position: absolute;
-            top: 40px;
+            bottom: 510px;
             padding: 10px;
             background: #f4f5fc;
             font-weight: 300;
@@ -124,6 +133,9 @@
             color: #151e36;
             font-family: 'Gilroy', sans-serif;
             border-left: 8px solid #c5bcb6;
+        }
+        @media (max-width: ($md3 + px)) {
+            display: none;
         }
     }
 }

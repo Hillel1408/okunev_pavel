@@ -62,7 +62,6 @@ $fontFamily: 'Noto Sans', sans-serif;
     }
 }
 .btn {
-    background: #151e36;
     border: 1px solid rgba(0, 202, 224, 0.64);
     padding: 18px 30px;
     font-weight: 300;
@@ -71,6 +70,13 @@ $fontFamily: 'Noto Sans', sans-serif;
     font-family: 'Gilroy', sans-serif;
     color: white;
     max-width: 265px;
+    pointer-events: none;
+    cursor: default;
+    background-color: #151e36;
+}
+.btn-active {
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 @import './sections/header';

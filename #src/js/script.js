@@ -12,6 +12,7 @@ const swiper = new Swiper('.reviews__swiper', {
         },
     },
 });
+
 const workSwiper = new Swiper('.work__swiper', {
     direction: 'horizontal',
     allowTouchMove: false,
@@ -26,6 +27,7 @@ const workSwiper = new Swiper('.work__swiper', {
         dragSize: 'auto',
     },
 });
+
 const certificatesSwiper = new Swiper('.certificates__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
@@ -40,3 +42,48 @@ const certificatesSwiper = new Swiper('.certificates__swiper', {
         prevEl: '.certificates__swiper-button-prev',
     },
 });
+
+func = (phoneInput, nameInput, btn) => {
+    const phoneMask = new IMask(phoneInput, {
+        mask: '+{7}(000)000-00-00',
+    });
+
+    nameInput.addEventListener('input', phoneInputHandler);
+    phoneInput.addEventListener('input', phoneInputHandler);
+    btn.addEventListener('click', btnHandler);
+
+    function phoneInputHandler() {
+        if (phoneMask.masked.isComplete && nameInput.value) {
+            btn.classList.add('btn-active');
+        } else {
+            btn.classList.remove('btn-active');
+        }
+    }
+
+    async function btnHandler(e) {
+        e.preventDefault();
+        const body = {
+            name: nameInput.value,
+            phone: phoneMask.unmaskedValue,
+        };
+        try {
+            await fetch('send_msg.php', {
+                method: 'POST',
+                body: body,
+            });
+            setTimeout(() => {}, 3000);
+        } catch (err) {
+            console.log(err);
+        }
+    }
+};
+
+const inp1 = document.querySelector('.input1');
+const inp2 = document.querySelector('.input2');
+const btn1 = document.querySelector('.btn1');
+func(inp2, inp1, btn1);
+
+const inp3 = document.querySelector('.input3');
+const inp4 = document.querySelector('.input4');
+const btn2 = document.querySelector('.btn2');
+func(inp4, inp3, btn2);
