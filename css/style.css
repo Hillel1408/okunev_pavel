@@ -726,17 +726,11 @@ body.lock {
           transform: translateY(5px);
 }
 
-@media (max-width: 767.98px) {
-  .intro__btn {
-    padding: 21px 12px;
-  }
-}
-
 @media (max-width: 1650px) {
-  .intro__btn:after {
+  .intro__btn:before {
     content: url("../img/img-55.png");
     position: absolute;
-    left: 240px;
+    left: 300px;
     bottom: -40px;
     -webkit-transform: scale(0.7);
         -ms-transform: scale(0.7);
@@ -744,8 +738,24 @@ body.lock {
   }
 }
 
-@media (max-width: 960px) {
-  .intro__btn:after {
+@media (max-width: 1023px) {
+  .intro__btn:before {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .intro__btn {
+    padding: 21px 12px;
+  }
+  .intro__btn:before {
+    display: block;
+    left: 250px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .intro__btn:before {
     display: none;
   }
 }
