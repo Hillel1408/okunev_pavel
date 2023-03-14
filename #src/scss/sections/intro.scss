@@ -125,20 +125,29 @@
             content: url('../img/icon-3.svg');
             transform: translateY(5px);
         }
-        @media (max-width: ($md3 + px)) {
-            padding: 21px 12px;
-        }
         @media (max-width: (1650px)) {
-            &:after {
+            &:before {
                 content: url('../img/img-55.png');
                 position: absolute;
-                left: 240px;
+                left: 300px;
                 bottom: -40px;
                 transform: scale(0.7);
             }
         }
-        @media (max-width: (960px)) {
-            &:after {
+        @media (max-width: (1023px)) {
+            &:before {
+                display: none;
+            }
+        }
+        @media (max-width: ($md3 + px)) {
+            padding: 21px 12px;
+            &:before {
+                display: block;
+                left: 250px;
+            }
+        }
+        @media (max-width: ($md4 + px)) {
+            &:before {
                 display: none;
             }
         }
